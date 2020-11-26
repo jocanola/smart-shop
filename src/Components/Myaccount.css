@@ -1,0 +1,50 @@
+.account {
+  display: flex;
+  flex-direction: row;
+}
+
+.account__sidebar {
+  text-align: center;
+  flex: 0.15;
+
+  height: 100vh;
+  background-color: rgb(20, 60, 95);
+  padding: 5px;
+  z-index: 1;
+}
+
+.account__avatar > .MuiAvatar-img {
+  width: 230px;
+  height: 220px;
+  border: 2px solid #cd9042;
+}
+
+.account__profile {
+  flex: 0.85;
+  color: white;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.account__profile::-webkit-scrollbar {
+  display: none;
+}
+.account__displayname {
+  margin: 10px 0px;
+  border-top: 2px solid #cd9042;
+  border-bottom: 2px solid #cd9042;
+}
+
+.account__linkprofile {
+  display: flex;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+}
+
+.account__linkicon {
+  margin-left: 15px;
+  margin-right: 15px;
+}

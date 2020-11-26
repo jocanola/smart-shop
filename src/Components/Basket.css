@@ -1,0 +1,26 @@
+.basket {
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.basket__img {
+  padding: 20px;
+}
+
+.basket__img img {
+  width: 200px;
+  max-height: 200px;
+}
+
+.basket__star {
+  display: flex;
+}
+
+.basket button {
+  background-color: #f0c14b;
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  border-radius: 3px;
+}

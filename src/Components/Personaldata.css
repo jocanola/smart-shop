@@ -1,0 +1,42 @@
+.personal {
+  color: black;
+  padding: 5px;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.personal_heading {
+  padding: 20px 0px;
+  border-bottom: 2px solid #cd9042;
+}
+
+h2 {
+  margin-left: 15px;
+}
+
+.personal_data {
+  width: 100%;
+}
+
+.personal_data1 {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.personal_data1 > input {
+  border: 1px solid gray;
+  border-radius: 3px;
+  width: 60%;
+  height: 30px;
+}
+
+.personal button {
+  float: right;
+  margin-right: 15px;
+  height: 34px;
+  border: 1px solid white;
+  background-color: #cd9042;
+  border-radius: 3px;
+  width: 100px;
+}

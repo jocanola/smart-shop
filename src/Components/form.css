@@ -1,0 +1,30 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form h4 {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form input {
+  height: 30px;
+  border: 2px solid mediumturquoise;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.form button {
+  height: 30px;
+  border-radius: 5px;
+  background-color: olive;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.form__input {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}

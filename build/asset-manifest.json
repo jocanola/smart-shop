@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7c1bd553.chunk.css",
+    "main.js": "/static/js/main.cd492b65.chunk.js",
+    "main.js.map": "/static/js/main.cd492b65.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.3d159552.js",
+    "runtime-main.js.map": "/static/js/runtime-main.3d159552.js.map",
+    "static/js/2.ce5bc445.chunk.js": "/static/js/2.ce5bc445.chunk.js",
+    "static/js/2.ce5bc445.chunk.js.map": "/static/js/2.ce5bc445.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.82390a2c11bcf30a74c07aa627496775.js": "/precache-manifest.82390a2c11bcf30a74c07aa627496775.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.7c1bd553.chunk.css.map": "/static/css/main.7c1bd553.chunk.css.map",
+    "static/js/2.ce5bc445.chunk.js.LICENSE.txt": "/static/js/2.ce5bc445.chunk.js.LICENSE.txt",
+    "static/media/avatar.jpg": "/static/media/avatar.af2e2a56.jpg",
+    "static/media/coverimg.jpg": "/static/media/coverimg.851d7918.jpg",
+    "static/media/image.jpg": "/static/media/image.998bab09.jpg",
+    "static/media/smartshop.png": "/static/media/smartshop.b92db3df.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3d159552.js",
+    "static/js/2.ce5bc445.chunk.js",
+    "static/css/main.7c1bd553.chunk.css",
+    "static/js/main.cd492b65.chunk.js"
+  ]
+}

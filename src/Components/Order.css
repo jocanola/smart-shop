@@ -1,0 +1,14 @@
+.order {
+  background-color: white;
+  padding: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  color: black;
+  width: 100%;
+}
+
+.order_title {
+  display: flex;
+  justify-content: space-between;
+}

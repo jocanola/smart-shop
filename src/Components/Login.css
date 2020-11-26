@@ -1,0 +1,96 @@
+.login {
+  background-color: white;
+  height: 100vh;
+}
+.login__logo img {
+  width: 100px;
+  object-fit: contain;
+  display: flex;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login__container {
+  display: flex;
+  color: black;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  background-color: #fff;
+  width: 300px;
+  border: 1px #ddd solid;
+  padding: 20px;
+}
+
+.shake {
+  animation: shaking 0.2s 8 alternate-reverse;
+}
+.nonshake {
+  animation: none;
+}
+
+@keyframes shaking {
+  from {
+    margin-right: 8%;
+  }
+
+  to {
+    margin-left: 8%;
+  }
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 28px;
+}
+
+.login__container > form > label {
+  display: block;
+  padding-left: 2px;
+  padding-bottom: 2px;
+  font-weight: 700;
+}
+
+.login__container > form > input {
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-bottom: 2px solid gray;
+}
+
+.login__container > form button {
+  width: 100%;
+  margin-top: 10px;
+  height: 30px;
+  background-color: #f0c14b;
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  border-radius: 3px;
+  justify-content: center;
+}
+
+.login__container > form > p {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.create__account {
+  margin-top: 20px;
+  display: flex;
+}
+
+.create__account button {
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3px;
+}
+
+.loading {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}

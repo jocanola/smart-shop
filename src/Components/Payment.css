@@ -1,0 +1,45 @@
+.payment {
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.payment_option {
+  background-color: white;
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 10px;
+}
+
+.payment_title {
+  flex: 0.2;
+}
+
+.payment_optionCard,
+.payment_optionAddress,
+.payment_optionBasket {
+  flex: 0.8;
+  align-items: center;
+}
+
+.payment__method {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.paystack_button {
+  height: 30px;
+  margin-right: 5px;
+}
+
+.paystack_button {
+  color: white;
+  height: 30px;
+  background-color: navy;
+  border-radius: 7px;
+  border: 2px solid blue;
+}

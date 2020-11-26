@@ -1,0 +1,35 @@
+.search {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 2px solid #cd9042;
+  border-radius: 6px;
+  margin-right: 20px;
+  height: 50px;
+}
+
+.search > input {
+  flex: 1;
+  height: 100%;
+  border: none;
+}
+
+.search__icon {
+  font-size: 40px !important;
+  color: black;
+  padding: 5px;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+}
+
+/* @media screen and (max-width: 600px) {
+  .header_search > input {
+    display: none;
+  }
+
+  .header_search {
+    flex: 0;
+    width: 20%;
+    padding-left: 10px;
+  }
+} */

@@ -1,0 +1,37 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  max-width: 1500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.home__cover {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  font-family: "Lobster", cursive;
+}
+
+.home__leftside {
+  flex: 0.4;
+}
+
+.home__rightside {
+  flex: 0.4;
+}
+
+.home__row {
+  display: flex;
+}
+
+.home__image {
+  width: 100%;
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.1)
+  );
+}
