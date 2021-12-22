@@ -4,6 +4,7 @@
   max-width: 1500px;
   margin-right: auto;
   margin-left: auto;
+  background-color: #e5e5e5;
 }
 .home__cover {
   display: flex;

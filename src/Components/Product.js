@@ -1,6 +1,7 @@
 import React from "react";
 import "./Product.css";
 import { useStateValue } from "../StateProvider";
+import CurrencyFormat from "react-currency-format";
 
 function Product({ id, title, price, image, rating, desc }) {
   const [state, dispatch] = useStateValue();
@@ -34,8 +35,13 @@ function Product({ id, title, price, image, rating, desc }) {
           <strong> {title} </strong> {truncateString(desc, 20)}
         </p>
         <p>
-          <small>$</small>
-          <strong>{price}</strong>
+          <CurrencyFormat
+            value={price}
+            displayType={"text"}
+            thousandSeparator={true}
+            prefix={"₦"}
+            renderText={(price) => <strong>{price}</strong>}
+          />
         </p>
         <div className="product_star">
           {Array(Number(rating))

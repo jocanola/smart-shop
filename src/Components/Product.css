@@ -10,8 +10,10 @@
   /* max-height: 400px; */
   width: 100%;
   z-index: 2;
-  padding: 20px;
+  padding: 16px;
+  margin: 10px;
   transition: all 1s;
+  border: 1px solid #d1d1d1;
 }
 .product:hover {
   transform: scale(1.05);

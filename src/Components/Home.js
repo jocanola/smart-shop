@@ -7,6 +7,7 @@ import Product from "./Product";
 import Searchproduct from "./Searchproduct";
 import { Flipped } from "react-flip-toolkit";
 import ReactLoading from "react-loading";
+import SkeletonComp from "./skeleton/SkeletonComp";
 
 function Home() {
   const [products, setProducts] = useState([]);
@@ -73,16 +74,11 @@ function Home() {
 
       <div ClassName="container">
         <div className="row justify-content-center">
-          {updatedproduct.length < 1 ? (
-            <ReactLoading
-              type="spinningBubbles"
-              color="black"
-              height={667}
-              width={375}
-            />
-          ) : (
-            ""
-          )}
+          {updatedproduct.length < 1
+            ? Array(10)
+                .fill()
+                .map((_, i) => <SkeletonComp />)
+            : null}
           {updatedproduct?.map((product) => (
             <Flipped
               flipKey={product?.product?.id}

@@ -2,6 +2,7 @@ import React from "react";
 import "./Basket.css";
 import { useStateValue } from "../StateProvider";
 import { Flipped } from "react-flip-toolkit";
+import CurrencyFormat from "react-currency-format";
 
 function Basket({ id, title, price, image, rating, hideRemoveButton }) {
   const [{ user }, dispatch] = useStateValue();
@@ -25,12 +26,14 @@ function Basket({ id, title, price, image, rating, hideRemoveButton }) {
           is the incredible products everyone always want to buy only a few left
           in store purchase your own and will be delivered to your door step
         </p>
-        <p>
-          <small>$</small> <strong>{price}</strong>
-        </p>
-        {hideRemoveButton && (
-          <button onClick={removeFromBasket}>Remove from the basket</button>
-        )}
+        <CurrencyFormat
+          value={price}
+          displayType={"text"}
+          thousandSeparator={true}
+          prefix={"₦"}
+          renderText={(price) => <strong>{price}</strong>}
+        />
+
         <div className="basket__star">
           {Array(Number(rating))
             .fill()
@@ -40,6 +43,11 @@ function Basket({ id, title, price, image, rating, hideRemoveButton }) {
               </p>
             ))}
         </div>
+        {hideRemoveButton && (
+          <button style={{ marginLeft: "5px" }} onClick={removeFromBasket}>
+            Remove from the basket
+          </button>
+        )}
       </div>
     </div>
   );

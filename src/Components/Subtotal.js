@@ -9,27 +9,22 @@ function Subtotal({ noOfItem, sum }) {
 
   return (
     <div className="subtotal">
-      <CurrencyFormat
-        renderText={(value) => (
-          <div>
-            <p>
-              Subtotal ( {noOfItem} item) : <strong>{sum}</strong>
-            </p>
+      <div>
+        <p>
+          Subtotal ( {noOfItem} item) :
+          <CurrencyFormat
+            value={sum}
+            displayType={"text"}
+            thousandSeparator={true}
+            prefix={"₦"}
+            renderText={(sum) => <strong>{sum}</strong>}
+          />
+        </p>
 
-            <small className="subtotal_gift">
-              <input type="checkbox" /> This order contains a gift
-            </small>
-            <Link to={user ? "/Payment" : "/login"}>
-              <button>Proceed to checkout</button>
-            </Link>
-          </div>
-        )}
-        decimalScale={2}
-        value={sum}
-        displayType={"text"}
-        thousandSeparator={true}
-        prefix={"$"}
-      />
+        <Link to={user ? "/Payment" : "/login"}>
+          <button>Proceed to Payment</button>
+        </Link>
+      </div>
     </div>
   );
 }

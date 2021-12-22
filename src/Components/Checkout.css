@@ -1,9 +1,12 @@
 .checkout {
   display: flex;
+  flex-wrap: wrap;
   height: max-content;
   background-color: white;
   padding: 20px;
   color: black;
+  margin-right: 100px;
+  margin-left: 100px;
 }
 
 .checkout__title {

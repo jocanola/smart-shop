@@ -1,10 +1,15 @@
 .basket {
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
+  /* margin-left: 100px;
+  margin-right: 100px; */
 }
 
+.basket__info {
+  width: 300px;
+}
 .basket__img {
   padding: 20px;
 }

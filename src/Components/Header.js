@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Header.css";
 import logo from "../media/logo.png";
-import ShoppingCartIcon from "@material-ui/icons/S   hoppingCart";
+import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import { Link, useHistory } from "react-router-dom";
 import { useStateValue } from "../StateProvider";
 import Badge from "@material-ui/core/Badge";

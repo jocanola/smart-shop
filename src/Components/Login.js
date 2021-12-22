@@ -41,6 +41,7 @@ function Login() {
           useremail: auth?.user?.email,
           userId: auth?.user?.uid,
         });
+        history.push("/");
       })
       .catch((error) => {
         alert(error);
